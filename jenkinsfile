@@ -36,20 +36,16 @@ pipeline {
             }
         }
 
-stages {
-        stage('Run Ansible Playbook') {
+   stage('Run Ansible Playbook') {
             steps {
                 script {
                     ansiblePlaybook(
                         playbook: 'deploy.yml',
                         inventory: 'inventory.ini'
-                     
-                    )
+                     )
                 }
             }
         }
-    }
 
-  
     }
 }
