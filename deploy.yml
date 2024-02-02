@@ -1,13 +1,18 @@
 ---
-- name: Pull Docker Image of HelloWorld Python program
-  hosts: all
-  vars:
-    ansible_python_interpreter: /usr/bin/python3
+- name: Pull Docker Image from Docker Hub
+  hosts: localhost
+  become: true
   tasks:
-    - name: Pull image
+    - name: Pull Docker Image
       docker_image:
-        name: iiitb/mytestimage
+        name: "iiitb/mytestimage"
         source: pull
+      register: docker_pull_result
+
+    - name: Display Docker Pull Result
+      debug:
+        var: docker_pull_result
+        
     - name: Start Docker service
       service:
         name: docker
