@@ -30,7 +30,7 @@ pipeline {
                 script{
                     docker.withRegistry('', 'DockerHubCred') {
                     sh 'docker tag mytestimage iiitb/mytestimage:latest'
-                    sh 'docker push iiitb/mytestimage:latest'
+                    sh 'docker push iiitb/mytestimage'
                     }
                  }
             }
