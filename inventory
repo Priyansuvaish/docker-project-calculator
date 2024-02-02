@@ -1,1 +1,1 @@
-localhost ansible_user=raju
+192.168.1.222 ansible_user=raju ansible_sudo_pass='raju'
