@@ -6,7 +6,7 @@
   tasks:
     - name: Pull image
       docker_image:
-        name: iiitb/mytestimage:latest
+        name: iiitb/mytestimage
         source: pull
     - name: Start Docker service
       service:
