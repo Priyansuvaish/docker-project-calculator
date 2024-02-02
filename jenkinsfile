@@ -38,7 +38,7 @@ pipeline {
 
    stage('Ansible Pull & Deploy') {
             steps {
-               ansiblePlaybook colorized: true, disableHostKeyChecking: true, installation: 'Ansible', inventory: 'inventory', playbook: 'deploy.yml'
+               ansiblePlaybook colorized: true, disableHostKeyChecking: true, installation: 'Ansible', inventory: 'inventory', playbook: 'deploy.yl'
             }
         }
 
