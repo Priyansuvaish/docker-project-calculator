@@ -28,7 +28,7 @@ pipeline {
         stage('Push Docker Images') {
             steps {
                 script{
-                    docker.withRegistry('', 'DockerHubCred') {
+                    docker.withRegistry('', 'de42dccd-1664-4127-a754-d681873bedec') {
                     sh 'docker tag mytestimage priyanshugupta753/mytestimage:latest'
                     sh 'docker push priyanshugupta753/mytestimage'
                     }
