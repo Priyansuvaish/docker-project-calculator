@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE_NAME = 'mytestimage'
-        GITHUB_REPO_URL = 'https://github.com/BThangaraju/Testing.git'
+        GITHUB_REPO_URL = 'https://github.com/Priyansuvaish/docker-project-testing.git'
     }
 
     stages {
@@ -29,8 +29,8 @@ pipeline {
             steps {
                 script{
                     docker.withRegistry('', 'DockerHubCred') {
-                    sh 'docker tag mytestimage iiitb/mytestimage:latest'
-                    sh 'docker push iiitb/mytestimage'
+                    sh 'docker tag mytestimage priyanshugupta753/mytestimage:latest'
+                    sh 'docker push priyanshugupta753/mytestimage'
                     }
                  }
             }
