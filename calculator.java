@@ -10,7 +10,7 @@ import java.util.Scanner;
 	      
       	do
          {
-	   System.out.print("Calculator demo");
+	   System.out.print("Calculator demo\n");
            System.out.print("1. Addition\n");
            System.out.print("2. Subtraction\n");
            System.out.print("3. Multiplication\n");
