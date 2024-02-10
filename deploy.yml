@@ -19,4 +19,4 @@
         name: docker
         state: started
     - name: Running container
-      shell: docker run -it -d --name HelloWorld priyanshugupta753/mytestimage
+      shell: docker run -it -d --name Helloworld priyanshugupta753/mytestimage
