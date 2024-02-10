@@ -2,10 +2,9 @@ FROM ubuntu:latest
 
 RUN apt update
 
-RUN apt install python3 -y
+RUN apt install openjdk-11-jdk -y
 
 WORKDIR /usr/app/src
 
-COPY HelloWorld.py ./
+COPY cal.java ./
 
-CMD ["python3", "./HelloWorld.py"]
