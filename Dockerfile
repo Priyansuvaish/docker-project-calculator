@@ -9,6 +9,6 @@ WORKDIR /usr/app/src
 COPY calculator.java ./
 
 CMD sed -i 's/\r$//' cal.java
-CMD ['java','./calculator.java']
+CMD ["java","./calculator.java"]
 
 
