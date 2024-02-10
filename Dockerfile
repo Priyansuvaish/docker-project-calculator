@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM ubuntu:latest
 COPY HelloWorld.py /app/HelloWorld.py
 RUN pip install python
 
