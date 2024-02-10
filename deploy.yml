@@ -6,7 +6,7 @@
   tasks:
     - name: Pull Docker Image
       docker_image:
-        name: "priyanshugupta753/mytestimage"
+        name: "priyanshugupta753/calculator"
         source: pull
       register: docker_pull_result
 
@@ -19,4 +19,4 @@
         name: docker
         state: started
     - name: Running container
-      shell: docker run -it -d --name Helloworld priyanshugupta753/mytestimage
+      shell: docker run -it -d --name calculator priyanshugupta753/calculator
