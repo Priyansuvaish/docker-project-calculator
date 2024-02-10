@@ -1,2 +1,11 @@
 FROM ubuntu:latest
-COPY HelloWorld.py /app/HelloWorld.py
+
+RUN apt update
+
+RUN apt install python3 -y
+
+WORKDIR /usr/app/src
+
+COPY HelloWorld.py ./
+
+CMD ["python3", "./HelloWorld.py"]
