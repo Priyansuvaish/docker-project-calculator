@@ -10,5 +10,4 @@ COPY calculator.java ./
 
 CMD sed -i 's/\r$//' calculator.java
 
-CMD ["java","./calculator.java"]
 
