@@ -1,7 +1,6 @@
 ---
 - name: Pull Docker Image from Docker Hub
   hosts: localhost
-  remote_user: kali
   become: false
   tasks:
     - name: Pull Docker Image
