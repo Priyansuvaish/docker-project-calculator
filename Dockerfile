@@ -1,2 +1,2 @@
-FROM ubuntu:latest
-COPY calculator.sh /app/calculator.sh
+FROM python:3.10-slim
+COPY HelloWorld.py /app/HelloWorld.py
