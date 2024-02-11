@@ -6,7 +6,7 @@ import java.util.Scanner;
      {
        double a, b, res;
        char choice, ch;
-       Scanner scan = new Scanner(System.in);
+       Scanner scanner = new Scanner(System.in);
 	      
       	do
          {
@@ -17,7 +17,7 @@ import java.util.Scanner;
            System.out.print("4. Power\n");
            System.out.print("5. Exit\n\n");
            System.out.print("Enter Your Choice : ");
-           choice = scan.next().charAt(0);
+           choice = scanner.next().charAt(0);
            switch(choice)
             {
               case '1' : System.out.print("Enter the number for square root : ");
