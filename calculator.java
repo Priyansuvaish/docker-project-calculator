@@ -26,18 +26,18 @@ import java.util.Scanner;
 	                 break;															                       
 	      case '2' : System.out.print("Enter the number for factorial : ");
 	                 a = scanner.nextDouble();
-                    	 System.out.println("Result: " + factorial((int)x));
+                    	 System.out.println("Result: " + factorial((int)a));
 	                 break;
 	 
 	      case '3' : System.out.print("Enter the number for natural log : ");
 	                 a = scanner.nextDouble();
-                    	 System.out.println("Result: " + Math.log(x));
+                    	 System.out.println("Result: " + Math.log(a));
 	                 break;
 	 
-	      case '4' : System.out.print("Enter two number for power \n Note: 2 3 mean the 2 power 3 that is 8 : ");
-	                 a = scan.nextDouble();
-	                 b = scan.nextDouble();
-	                 System.out.println("Result: " + Math.pow(x, b));
+	      case '4' : System.out.print("Enter two number for power \n Note: 2 3 mean the 2 ^ 3 that is 8 : ");
+	                 a = scanner.nextDouble();
+	                 b = scanner.nextDouble();
+	                 System.out.println("Result: " + Math.pow(a, b));
 	                 break;
 	 
 	      case '5' : System.exit(0);
